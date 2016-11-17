@@ -126,13 +126,8 @@ namespace PokemonGo.RocketAPI.Console
                 {
                     Task.Run(() =>
                     {
-                        if (Globals.simulatedPGO){
                         var pokemonList = new GameAspectSimulator();
                         pokemonList.ShowDialog();
-                                 }else{
-                        var pokemonList = new Pokemons();
-                        pokemonList.ShowDialog();
-                                 }
                     });
                 }                
             }
@@ -385,7 +380,6 @@ namespace PokemonGo.RocketAPI.Console
         public static int MinIVtoCatch = 0;
         public static bool AvoidRegionLock = true;
         public static bool ForceSnipe = false;
-        public static bool simulatedPGO = false;
         public static ByteString SessionHash;
 
         public static bool No2kmEggs = false;

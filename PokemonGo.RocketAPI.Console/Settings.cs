@@ -765,13 +765,7 @@ namespace PokemonGo.RocketAPI.Console
         {
             get { return Globals.NextBestBallOnEscape; }
             set { Globals.NextBestBallOnEscape = value; }
-        }
-        public bool simulatedPGO
-        {
-            get { return Globals.simulatedPGO; }
-            set { Globals.simulatedPGO = value; }
-        }      
-        
+        }          
         bool ISettings.No2kmEggs
         {
             get { return Globals.No2kmEggs; }
